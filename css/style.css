@@ -218,6 +218,7 @@ img {
 
 .user-navigation-bookmarks {
     display: inline-block;
+    vertical-align: middle;
     position: relative;
     padding-left: 42px;
     padding-right: 38px;
@@ -240,6 +241,7 @@ img {
 
 .user-navigation-cart {
     display: inline-block;
+    vertical-align: middle;
     position: relative;
     padding-right: 26px;
     padding-left: 35px;
@@ -274,6 +276,7 @@ img {
 
 .user-navigation-order {
     display: inline-block;
+    vertical-align: middle;
     background-color: var(--header-green);
     padding-top: 9px;
     padding-bottom: 9px;
@@ -323,6 +326,7 @@ img {
 
 .info-phone {
     display: inline-block;
+    vertical-align: middle;
     width: 270px;
     height: 45px;
     position: relative;
@@ -373,6 +377,7 @@ img {
 
 .header-button {
     display: inline-block;
+    vertical-align: middle;
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -431,6 +436,7 @@ img {
 
 .site-navigation-link {
     display: inline-block;
+    vertical-align: middle;
     padding-top: 16px;
     padding-bottom: 20px;
     font-family: "Cuprum", "Arial", sans-serif;
@@ -490,6 +496,7 @@ img {
 
 .products-link {
     display: inline-block;
+    vertical-align: middle;
     font-size: 14px;
     line-height: 18px;
     margin-left: 23px;
@@ -652,14 +659,14 @@ img {
     display: none;
     width: 620px;
     background-image: url("../img/slider/slide-one.jpg");
-    background-color: var(--special-green);
+    background-color: var(--special-grey);
 }
 
 .slider-two {
     display: none;
     width: 620px;
     background-image: url("../img/slider/slide-two.jpg");
-    background-color: var(--special-green);
+    background-color: var(--special-grey);
 }
 
 .slider-current {
@@ -1028,6 +1035,7 @@ img {
 
 .services-link {
     display: inline-block;
+    vertical-align: middle;
     background-color: var(--china-blue);
     box-shadow: 0 1px 0 var(--basic-blue), inset 0 1px 0 var(--shadow-blue);
     font-family: "Cuprum", "Arial", sans-serif;
@@ -1141,6 +1149,7 @@ img {
 
 .link {
     display: inline-block;
+    vertical-align: middle;
     background-color: var(--basic-red);
     font-family: "Cuprum", "Arial", sans-serif;
     font-style: normal;
@@ -1229,9 +1238,14 @@ img {
     justify-content: space-between;
 }
 
+.information-about-us {
+    max-width: 460px;
+}
+
 .information-contacts {
     display: flex;
     flex-direction: column;
+    max-width: 300px;
 }
 
 .contacts-img {
@@ -1420,6 +1434,7 @@ img {
 
 .user-navigation-cart-full {
     display: inline-block;
+    vertical-align: middle;
     position: relative;
     padding-right: 21px;
     padding-left: 35px;
@@ -1513,6 +1528,7 @@ img {
 
 .breadcrumbs-svg {
     display: inline-block;
+    vertical-align: middle;
     margin-right: 15px;
     margin-top: 2px;
 }
@@ -1827,8 +1843,10 @@ img {
     opacity: 0.79;
 }
 
+.filter-radio:focus + .radio-label::before,
 .filter-radio:hover + .radio-label::before,
-.filter-radio:focus + .radio-label::before {
+.filter-radio:checked:focus + .radio-label::before,
+.filter-radio:checked:hover + .radio-label::before {
     opacity: 1;
 }
 
@@ -2131,7 +2149,7 @@ img {
     width: 943px;
     position: fixed;
     top: auto;
-    bottom: 333px;
+    bottom: 326px;
     right: 0;
     left: 0;
     margin: auto auto;
